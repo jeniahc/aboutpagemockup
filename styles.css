@@ -10,12 +10,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     background-color: antiquewhite;
+}
+
+h1 {
+    padding-top: 55px;
+    height: 10vh;
 }
 
 #info {
     display: grid;
+    padding-top: 40px;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -30,4 +36,22 @@ body {
     color: black;
     font-size: 1.2rem;
     text-align: center;
+}
+
+#circle {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    width:125px;
+    background-color: bisque;
+    border-radius: 100px;
+    font-size: 1.5rem;
+    color:black;
+    cursor:pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+.hover {
+    transform: scale(2);
 }

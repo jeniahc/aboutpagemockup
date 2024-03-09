@@ -32,3 +32,19 @@ let details = data.map(function(item) {
 });
 
 info.innerHTML = details.join("\n");
+
+
+const circle = document.querySelector("#circle");
+
+circle.addEventListener("mouseenter", () => {
+     //exclamation point says opposite; "if cicle does NOT contain hover"
+    if(!circle.classList.contains("hover")) {
+        circle.classList.add("hover");
+    }
+});
+
+circle.addEventListener("mouseleave", () => {
+    if(circle.classList.contains("hover")) {
+        circle.classList.remove("hover");
+    }
+});
